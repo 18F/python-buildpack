@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+source $BIN_DIR/utils
+
+bpwatch start protobufs_install
+
 wget https://github.com/google/protobuf/releases/download/v2.6.1/protobuf-2.6.1.tar.gz
 
 tar -xvf protobuf-2.6.1.tar.gz
@@ -10,3 +14,4 @@ make
 make check
 make install
 
+bpwatch stop protobufs_install
