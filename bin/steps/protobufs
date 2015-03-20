@@ -16,4 +16,4 @@ make install
 
 bpwatch stop protobufs_install
 
-cd $HOME
+cd /app
