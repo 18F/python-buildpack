@@ -9,9 +9,11 @@ wget https://github.com/google/protobuf/releases/download/v2.6.1/protobuf-2.6.1.
 tar -xvf protobuf-2.6.1.tar.gz
 cd protobuf-2.6.1
 
-sh configure --prefix=/app
+sh configure --prefix=/app/.heroku/vendor
 make
 make check
 make install
 
 bpwatch stop protobufs_install
+
+cd $HOME
