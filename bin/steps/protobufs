@@ -4,8 +4,8 @@ source $BIN_DIR/utils
 
 bpwatch start protobufs_install
 
-if test -d $CACHE_DIR/protobufs; then
-    cd $CACHE_DIR/protobufs
+if test -d $CACHE_DIR/protobufs/protobuf-2.6.1; then
+    cd $CACHE_DIR/protobufs/protobuf-2.6.1
     
 else
     mkdir $CACHE_DIR/protobufs
